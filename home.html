@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Household Income Manager</title>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="home.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+        <center>
+            <h1 id="heading">
+                Household Income Manager
+                <img id="head_logo" src="logo.png">
+            </h1>
+
+            <h3 id="welcome_name"></h3>            
+        </center>
+
+        <h3 class="t_income">Total Income: <span id="total_income"></span> </h3>
+        <h3 class="t_exp">Total Expense: <span id="total_expense"></span> </h3>
+
+        <h4 style="color: indianred;font-weight: 900;" align="center">Add your Income and expense and BE PAPERLESS!!!</h4>
+        <br><br>
+
+        <!-- Add Income div -->
+        <div id="add_income_div">
+            
+            <h2>Income</h2>
+            <label>Date : </label> &nbsp; <input type="date" placeholder="Date" id="date_income_input">
+            <br><br>
+            <label>Amount : </label> &nbsp;&nbsp;&nbsp; <input type="text" placeholder="Amount Recieved" id="amount_income_input">
+            <br><br>
+            <label>Type : </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Type" id="type_income_input">
+            <br><br>
+            <label>Remarks<br>(Optional) : </label> <input type="text" placeholder="Description" id="remarks_income_input">
+            <br><br><br>
+            <button class="btn btn-success" onclick="saveIncome()">Save Income</button>
+            
+        </div>
+
+        <div id="add_expense_div">
+            
+            <h2>Expense</h2>
+            <label>Date : </label> <input type="date" placeholder="Date" id="date_expense_input">
+            <br><br>
+            <label>Amount : </label> &nbsp;&nbsp;&nbsp; <input type="text" placeholder="Amount Expensed" id="amount_expense_input">
+            <br><br>
+            <label>Where : </label> &nbsp;&nbsp;&nbsp; <input type="text" placeholder="What kind of expense" id="where_expense_input">
+            <br><br>
+            <label>Remarks<br>(Optional) : </label> <input type="text" placeholder="Description" id="remarks_expense_input">
+            <br><br><br>
+            <button class="btn btn-warning" onclick="saveExpense()">Save Expense</button>
+            
+        </div>
+
+        </div>
+    </body>
+</html>

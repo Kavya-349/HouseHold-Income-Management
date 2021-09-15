@@ -1,0 +1,49 @@
+body {
+    background-image: URL("bg.jpg");
+}
+#head_logo {
+    width: 60;
+    height: 65;
+    border-radius: 15px;
+    border: 2px solid gray;
+}
+#id_input , #password_input {
+    width: 400px;
+}
+#heading {
+    font-family: sofia , sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.sign_in_div h3 {
+    color: red;
+}
+.sign_in_div h4 {
+    color: green;
+}
+.t_income {
+    color: greenyellow;
+}
+.t_exp {
+    color: hotpink;
+}
+#add_income_div {
+    float:left;
+    text-align: center;
+    margin-left: 360px;
+}
+#add_income_div h2 {
+    color: greenyellow;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+}
+#add_expense_div {
+    float: right;
+    text-align: center;
+    margin-right: 360px;
+}
+#add_expense_div h2 {
+    color: hotpink;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+}
